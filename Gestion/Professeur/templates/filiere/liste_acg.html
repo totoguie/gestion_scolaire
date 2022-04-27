@@ -1,0 +1,56 @@
+{% extends 'navbar/base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'dashbord' %}">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Liste des etudiants</li>
+    </ol>
+    <div class="car-mb3">
+        <div class="card-header">
+            <i class="fa fa-table"></i> Liste des etudiants en Audits et control de gestion
+        </div>
+        <label class="ml-4 mt-3 ">
+            Niveau
+            <select name="dataTable_length" id="" class="form-control form-control-sm ">
+                <option value="Licence1">Licence1</option>
+                <option value="Licence2">Licence2</option>
+                <option value="Licence3">Licence3</option>
+            </select>
+        </label>
+        <form action="#" class="pull-right mail-src-position mt-3 d-flex">
+            <div class="input-append">
+              <input type="text" class="form-control " placeholder="Search Mail" name="rech">
+            </div>
+            <input type="submit" value="rechercher" class="btn btn-primary">
+          </form>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-condensed" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Matricule</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Notes</th>
+                        <th>Filiere</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>AAC</td>
+                          <td>AUSTRALIAN .</td>
+                          <td class="numeric">$1.38</td>
+                          <td class="numeric">-0.01</td>
+                          <td class="numeric">-0.36%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated {{ etudiants.last.user.date_joined }}</div>
+    </div>
+    </div>
+{% endblock %}

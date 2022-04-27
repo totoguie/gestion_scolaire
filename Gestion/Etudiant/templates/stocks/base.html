@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/sidebars.css' %}">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet"
+          type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'home_page/css/creative.min.css' %}" rel="stylesheet">
+    <link href="{% static 'home_page/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+<header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 230px; height: 700px">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <i class="fa fa-home" style="width: 20px; height: 20px;"></i>
+            <span class="fs-4"> ETUDIANT</span>
+        </a>
+        <div class="border-bottom"></div>
+        <br>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <p class="centered">
+                <img src="{% static 'img/african_american_student_reading.jpg' %}" class="rounded-circle" width="140" height="140">
+            </p>
+            <h5 class="centered">Kouame Corneille</h5>
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+                <i class="fa fa-user" style="width: 20px; height: 20px;"></i>
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fa fa-dashboard" style="width: 20px; height: 20px;"></i>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fa fa-info" style="width: 20px; height: 20px;"></i>
+              Informations
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fa fa-book" style="width: 20px; height: 20px;"></i>
+              Programme Annuel
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+                <i class="fa fa-calendar" style="width: 20px; height: 20px;"></i>
+              Emplois du Temps
+            </a>
+          </li>
+        </ul>
+        <div class="border-bottom mb-3"></div>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>Compte</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+</header>
+</div>
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<!-- Plugin JavaScript -->
+<script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+<script src="{% static 'vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+<script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+<!-- Custom scripts for this template -->
+<script src="{% static 'home_page/js/creative.min.js' %}"></script>
+<script src="{% static 'js/sidebars.js' %}"></script>
+</html>

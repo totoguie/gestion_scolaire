@@ -1,0 +1,44 @@
+{% extends "temp/base.html" %}
+{% block title %}
+  FORMATIONS | UTA
+{% endblock title %}
+{% load static  %}
+{% block content %}
+{% include "temp/navbar.html" %}
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-upper">
+                    <strong>IGL</strong>
+                </h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-4">
+    <h3 class="text-center"><span style="color: green;">NOS OBJECTIFS</span></h3>
+    <div class="border-bottom"></div>
+    <div class="row">
+        <h4><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+        <h4><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    </div>
+    <div>
+    <h2 class="ml-3">DEBOUCHES DE LA FILIERE</h2>
+    <div class="form-group">
+        <ul class="text-secondary" style="list-style: none;">
+            <li>-Lorem ipsum dolor sit amet.</li>
+            <li>-Lorem ipsum dolor sit amet.</li>
+            <li>-Lorem ipsum dolor sit amet.</li>
+            <li>-Lorem ipsum dolor sit amet.</li>
+            <li>-Lorem ipsum dolor sit amet.</li>
+        </ul>
+    </div>
+    </div>
+    
+</div>
+{% include "temp/footer.html" %}
+{% endblock content %}

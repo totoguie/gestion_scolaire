@@ -1,0 +1,219 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: century;
+    scroll-behavior: smooth;
+}
+ /* header */
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px ;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+header.sticky{
+    background-color: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .ul li a{
+    color: #008000;
+}
+/* Logo UTA et menu */
+.logo {
+    color: #008000;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 3rem;
+    text-shadow: rgba(0,0,0,0.7);
+}
+
+.ul{
+    display: flex;
+    position: relative;    
+}
+
+.ul li {
+    list-style: none;
+}
+
+.ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.6s ease-in-out;
+}
+
+header .ul li a:hover{
+    color: #008000;
+    border-bottom: 2px solid #fff;
+}
+
+.accueil{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.2)50%, rgba(0,0,0,0.2)50%), url(/static/image/3.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* texte sur l'image */
+
+.texte{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #fff;
+}
+span{
+    color: #008000;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/*Bouton */
+
+.bouton{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: 0.6S ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-weight: bold;
+   
+
+}
+
+.bouton:hover{
+    background-color: #008000;
+
+}
+.formation{
+    margin: 5% 30%;
+}
+.formation h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.formation P{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.wrapper ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15%;
+}
+
+
+.wrapper ul li{
+    text-align: center;
+    margin: 0% 5%;
+    
+}
+
+.wrapper h4{
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.wrapper p{
+    margin-bottom: 20px;
+}
+
+img{
+
+    height: 200px;
+    width: 200px;
+}
+
+
+/* Apropos de nous Section */
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: aliceblue;
+}
+.quedire{
+    margin: 5% 30%;
+}
+.quedire h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row .col50 h2{
+    margin: 5% 0%;
+}
+
+.row .col50 p{
+    text-align: center;
+}
+
+.titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #008000;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+    border-radius: 50px;
+}

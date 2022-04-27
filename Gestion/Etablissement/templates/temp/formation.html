@@ -1,0 +1,210 @@
+{% extends "temp/base.html" %}
+{% block title %}
+  FORMATIONS | UTA
+{% endblock title %}
+{% load static  %}
+{% block content %}
+{% include "temp/navbar.html" %}
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-upper">
+                    <strong>NOS FORMATIONS</strong>
+                </h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-4">
+    <h3 style="color: green;" class="text-center">La formation a UTA </h3>
+    <div class="border-bottom"></div>
+    <div class="row">
+        <h3 class="ml-6"><i class="fa fa-angle-right "></i><span style="color: green;"> UTA</span> c'est 7 filières de licence</h3>
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6 mt-3">
+              <div class="h-100 p-5 text-dark bg-light rounded-3">
+                <img src="{% static 'img/AdobeStock_49194197.jpeg' %}" alt="" style="height: 300px; width: 100%;">
+                <h3>IGL</h3>
+                <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Informatique Option Genie Logiciel.</p>
+                <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/African_American_Scholarships.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SEA</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Science Economique Applique.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/african_american_student_reading.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SEG</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> SCience Economique et de Gestion.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/black-students.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>FBA</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Finance Banque Assurance.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/AdobeStock_49194197.jpeg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>FC</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Finance Comptabilite.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/black-students.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SJAP</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Science Juridique , Administration & Politique.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/african_american_student_reading.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>ACG</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66);"></i> Audit et Controle de Gestion.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/black-students.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>RIT</h3>
+                    <p><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66) ;"></i> Reseaux Informatique et Telecommunication.</p>
+                    <input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/>             
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="h-100 p-5 text-dark  rounded-3">
+            <h3><i class="fa fa-angle-right ml-4"></i><span style="color: green;">Admission - Dossier d'inscription</span></h3>
+            <div class="border-bottom "></div>
+            <div class="form-group">
+                <ul class="text-secondary">
+                    <li>Etre titulaire d'un  bac ou un autre diplome equivalent .</li>
+                    <li>Une(1) copie légalisée du relevé du Bac</li>
+                    <li>Deux(2) extrait d'acte de naissance original.</li>
+                    <li>Deux(2) Photocopie de la Carte Nationale d'Identité ou Attestation d'idnetité en cour de validité.</li>
+                </ul>
+            </div>
+            <h3><i class="fa fa-angle-right ml-4"></i> <span style="color: green;">Couts et Modalités de paimenent des formations</span></h3>
+            <div class="border-bottom"></div>
+            <strong class="ml-3"> 1-Pour les affectés de l'Etat</strong>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-condensed" width="100%" cellspacing="0">
+                        <thead >
+                          <tr class="table-primary">
+                            <th >Cycle</th>
+                            <th>Inscription</th>
+                            <th>Versement 1(Novembre)</th>
+                            <th>Versement 2(Decembre)</th>
+                            <th>Versement 3(Fevrier)</th>
+                            <th>Montant Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Licence 1</td>
+                              <td class="numeric">170.000</td>
+                              <td class="numeric">50.000</td>
+                              <td class="numeric">50.000</td>
+                              <td class="numeric">50.000</td>
+                              <td>320.000</td>
+                            </tr>
+                            <tr>
+                                <td>Licence 2</td>
+                                <td class="numeric">170.000</td>
+                                <td class="numeric">50.000</td>
+                                <td class="numeric">50.000</td>
+                                <td class="numeric">50.000</td>
+                                <td>320.000</td>
+                              </tr>
+                              <tr>
+                                <td>Licence 3</td>
+                                <td class="numeric">170.000</td>
+                                <td class="numeric">50.000</td>
+                                <td class="numeric">50.000</td>
+                                <td class="numeric">50.000</td>
+                                <td>320.000</td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <strong class="ml-3"> 2-Pour les étudiants du privé</strong>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-condensed" width="100%" cellspacing="0">
+                        <thead >
+                          <tr class="table-primary">
+                            <th >Cycle</th>
+                            <th>Inscription</th>
+                            <th>Versement 1(Novembre)</th>
+                            <th>Versement 2(Decembre)</th>
+                            <th>Versement 3(Fevrier)</th>
+                            <th>Montant Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Licence 1</td>
+                              <td class="numeric">350.000</td>
+                              <td class="numeric">100.000</td>
+                              <td class="numeric">100.000</td>
+                              <td class="numeric">100.000</td>
+                              <td>650.000</td>
+                            </tr>
+                            <tr>
+                                <td>Licence 2</td>
+                                <td class="numeric">350.000</td>
+                                <td class="numeric">100.000</td>
+                                <td class="numeric">100.000</td>
+                                <td class="numeric">100.000</td>
+                                <td>650.000</td>
+                              </tr>
+                              <tr>
+                                <td>Licence 3</td>
+                                <td class="numeric">450.000</td>
+                                <td class="numeric">100.000</td>
+                                <td class="numeric">100.000</td>
+                                <td class="numeric">100.000</td>
+                                <td>750.000</td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 ">
+            <h3><i class="fa fa-angle-right ml-4" style="color: rgb(66, 241, 66) ;"></i>Tenue vestimetaire - Règles de vie sur le campus</h3>
+            <div class="border-bottom "></div>
+            <p class="ml-3 mt-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Exercitationem ullam, autem aliquam neque modi quae, quibusdam
+                 at nobis illum esse eveniet voluptatem quod consequatur! 
+                Labore dolorum maiores dolores earum porro.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Exercitationem ullam, autem aliquam neque modi quae, quibusdam
+                 at nobis illum esse eveniet voluptatem quod consequatur! 
+                Labore dolorum maiores dolores earum porro.
+            </p>
+        </div>
+   </div>
+</div>
+{% include "temp/footer.html" %}
+{% endblock content %}

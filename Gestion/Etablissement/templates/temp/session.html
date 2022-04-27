@@ -1,0 +1,93 @@
+{% extends "temp/base.html" %}
+{% block title %}
+  SESSION | UTA
+{% endblock title %}
+{% load static  %}
+{% block content %}
+{% include "temp/navbar.html" %}
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-uppercase">
+                    <strong>PAGE DE SESSION</strong>
+                </h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-4">
+    <div class="row">
+        <h3><i class="fa fa-angle-right ml-4"></i> <span style="color: green;">Choisissez votre session et connectez vous pour plus d'infos</span></h3>
+        <div class="border-bottom"></div>
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6 mt-3">
+              <div class="h-100 p-5 text-dark bg-light rounded-3">
+                <img src="{% static 'img/AdobeStock_49194197.jpeg' %}" alt="" style="height: 300px; width: 100%;">
+                <h3>SESSION IGL</h3>
+                <p>Connectez vous pour voir les nouvelles informations.</p>
+                <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+              </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/African_American_Scholarships.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SESSION SEA</h3>
+                    <p>Connectez vous pour voir les nouvelles informations.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/african_american_student_reading.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SESSION SEG</h3>
+                    <p>Connectez vous pour voir les nouvelles informations.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/black-students.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SESSION FBA</h3>
+                    <p>Connectez vous pour voir les nouvelles informations.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/AdobeStock_49194197.jpeg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SESSION FC</h3>
+                    <p>Finance Comptabilite.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/black-students.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SESSION SJAP</h3>
+                    <p>Connectez vous pour voir les nouvelles informations.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/african_american_student_reading.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3>SESSION ACG</h3>
+                    <p>Audit et Controle de Gestion.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="h-100 p-5 text-dark bg-light rounded-3">
+                    <img src="{% static 'img/black-students.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                    <h3> SESSION RIT</h3>
+                    <p>Connectez vous pour voir les nouvelles informations.</p>
+                    <a href="{% url 'login_etudiant' %}"><input class="btn btn-success " type="button" value="Se connecter"/></a>            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "temp/footer.html" %}
+{% endblock content %}

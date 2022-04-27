@@ -1,0 +1,46 @@
+<!-- templates/registration/password_reset_done.html -->
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .error {
+        color: #ff284e;
+    }
+    .success {
+        color: #4eb718;
+    }
+</style>
+    <div class="container">
+        <div class="card card-login mx-auto mt-5">
+            <div class="card-header text-center">Réinitialiser  votre mot de passe</div>
+            <div class="card-body">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="text-center mt-2 mb-3">
+                        <h4>Verifier votre boite e-mail.</h4>
+                        <p>Nous vous avons envoyer un e-mail contenant un code de validation.</p>
+                        <input required type="text" name="code" id="code" class="form-control" placeholder="Entrer le code reçu par e-mail">
+                        {% if messages %}
+                            <ul>
+                                {% for message in messages %}
+                                    <li
+                                        {% if message.tags %}
+                                        class="{{ message.tags }}"
+                                        {% endif %}>
+                                        {{ message }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" value="Valider" class="btn btn-primary btn-block">
+                        <hr>
+                        <a class="d-block small" href="{% url 'login' %}">Page de connexion</a>
+                        <hr>
+                        <a class="d-block small mt-3" href="{% url 'index' %}"> Page d'accueil</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %} Page

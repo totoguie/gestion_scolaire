@@ -1,0 +1,110 @@
+{% extends "temp/base.html" %}
+{% block title %}
+  ACCUEIL | UTA
+{% endblock title %}
+{% load static  %}
+{% block content %}
+{% include "temp/navbar.html" %}
+<header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="text-uppercase">
+                    <strong>UNIVERSITE de technologie d'abidjan</strong>
+                </h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-4">
+    <div>
+        <h2 class="text-center ml-8"><span style="color: #09b651;">PRESENTATION</span></h2>
+        <div class="border-bottom"></div>
+        <br>
+        <h3 class="text-center">Université de Technologie d'Abidjan</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sequi sint, aperiam consequatur molestias amet rerum numquam
+             doloremque optio qui nihil maxime eos dolorem 
+            minus eveniet quisquam necessitatibus hic eius placeat.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sequi sint, aperiam consequatur molestias amet rerum numquam
+             doloremque optio qui nihil maxime eos dolorem 
+            minus eveniet quisquam necessitatibus hic eius placeat.
+        </p>
+    </div> 
+    <h2 class="text-uppercase text-center"><span style="color: #09b651">NOS FORMATIONS</span></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Aliquid ab atque sapiente nobis, reprehenderit porro 
+         vero ipsa, accusantium rem adipisci sit, 
+        sequi totam quod corporis eius exercitationem voluptatibus dignissimos veniam!vero ipsa,
+         accusantium rem adipisci sit.vero ipsa, accusantium rem adipisci site.</p>
+    <div class="border-bottom "></div>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-4 mt-3">
+          <div class="h-100 p-5 text-dark  rounded-3">
+            <img src="{% static 'img/mortarboard.png' %}" alt="" style="height: 300px; width: 100%;">
+            <h3 class="mt-3">LICENCE</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet beatae 
+                iste ut alias molestias cumque corporis totam? Ratione.</p>
+            <a href="{% url 'formation' %}"><input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/></a>           
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="h-100 p-5 text-dark rounded-3">
+                <img src="{% static 'img/diploma.png' %}" alt="" style="height: 300px; width: 100%;">
+                <h3 class="mt-3">MASTEUR</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet beatae 
+                    iste ut alias molestias cumque corporis totam? Ratione.</p>
+                    <a href="{% url 'formation' %}"><input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/></a>           
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="h-100 p-5 text-dark  rounded-3">
+                <img src="{% static 'img/graduation-hat-and-diploma.png' %}" alt="" style="height: 300px; width: 100%;">
+                <h3 class="mt-3">DOCTORAT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet beatae 
+                    iste ut alias molestias cumque corporis totam? Ratione.</p>
+                    <a href="{% url 'formation' %}"><input class="btn btn-success " type="button" value="EN SAVOIR PLUS"/></a>           
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom"></div>
+</div>
+<div class="container bg-light mt-3">
+    <h3 class="text-center"><span style="color: #09b651;">ACTUALITES UTA</span></h3>
+    <div class="border-bottom "></div>
+    <p class="text-center">Voir les informations récentes concernant UTA</p>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6 mt-3">
+          <div class="h-100 p-5 text-dark  rounded-3">
+            <img src="{% static 'img/igl1.jpg' %}" alt="" style="height: 300px; width: 100%;">
+            <h3 class="mt-3" style="color: #09b651;">Insciption 2021-2022</h3>
+            <p>Les pre-inscription au titre de l'année academique 2021-2022 sont ouvertes et se poursuivent tous les jours de 8h a 17h .</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="h-100 p-5 text-dark rounded-3">
+                <img src="{% static 'img/igl3.jpg' %}" alt="" style="height: 300px; width: 100%;">
+                <h3 class="mt-3" style="color: #09b651;">Rentrée universitaire 2021-2022</h3>
+                <p>Les cour debuterons  ce lundi 18 octobre pour les etudiants de la 1 ere ,2 eme et 3 eme année de licence</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom"></div>
+    <h3 class="text-center mt-3"><span style="color: #09b651;">NOS ATOUTS MAJEURS</span></h3>
+    <div class="border-bottom "></div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga mollitia sint suscipit
+         exercitationem
+         soluta repellat sit, ab fugit quas impedit? Itaque, 
+        iusto quas dolore tenetur obcaecati expedita ad quo minima!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga mollitia sint suscipit
+        exercitationem
+        soluta repellat sit, ab fugit quas impedit? Itaque, 
+       iusto quas dolore tenetur obcaecati expedita ad quo minima.
+    </p>
+    <a href="{% url 'nos_atout' %}" class="ml-5"><input class="btn btn-success " type="button" value="PLUS D'INFOS"/></a>
+</div>
+
+{% include "temp/footer.html" %}
+{% endblock content %}
